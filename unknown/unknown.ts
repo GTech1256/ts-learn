@@ -11,7 +11,7 @@ console.log(taskAny.title);
 
 // -=SOLVE=-
 
-// Property 'title' is missing in type '{}' but required in type 'Task'
+//  ts(2741) | Property 'title' is missing in type '{}' but required in type 'Task'. 
 const taskUnknown: Task = JSON.parse(
   '{ "tile": "Title text" }'
 ) as unknown
