@@ -52,3 +52,11 @@ const id2: ID = '1234';
 // const id3: ID = true;
 
 type SomeType = string | null | undefined;
+
+
+// -=Type assertions=-
+
+let someValue: any = 'this is a string';
+
+// let strLength: number = (<string>someValue).length;
+let strLength: number = (someValue as string).length;
